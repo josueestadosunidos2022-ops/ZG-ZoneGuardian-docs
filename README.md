@@ -2,40 +2,19 @@
 
 ## English
 
-Server-enforced player regions and configurable access rules. Minecraft 1.20.1 / Forge 47.x.
+Protect player regions on a dedicated Minecraft 1.20.1 / Forge 47.4.x server. Current pair: **server 3.4.1 + client 3.4.1**, protocol 7. Uploads are two separate files on one CurseForge project. Install the server file only on the server, the client file only on clients, and ZoneCore 2.1.0+ on the server. The client does not require ZoneCore. Lightman's Currency 1.20.1-2.3.0.5+ is optional for its machine, trade and auction flags.
 
-### Installation
+Use `/zoneguardian pos1`, `pos2`, then `crear <name>` to protect a selection. `/zoneguardian editar [name]` opens the custom flag panel; `/zoneguardian flag <name> <flag> <value>` edits by command. The panel organizes 108 flags into 13 tasks, including building, machines, entities, weather, movement, commands and economy. The server validates edits and permissions. `zoneguardian.region.create`, `zoneguardian.region.manage`, `zoneguardian.admin`, `zoneguardian.command.<command>` and `zoneguardian.flag.<flag>` are permission nodes. Owners can manage their own regions; delegated flag permissions limit what can be edited.
 
-Install the labeled server JAR on the server and its compatible client JAR on players' clients. Both files belong to the same CurseForge project. The two version numbers may differ; follow the stated pair, never mix releases. Required mod dependencies shown by current source metadata: **ZoneCore**. Check the dependency version range of the exact uploaded file before installation.
-
-### Configuration
-
-Edit generated TOML files while the server or game is stopped unless a documented reload command is available. Back up persistent data before updates.
-
-| Config file | Use |
-|---|---|
-| `regiones/creadas.toml` | Verify the exact generated path and options for the selected release. |
-
-See [configuration reference](CONFIGURATION.md) for keys detected in source and [release compatibility](RELEASES.md) for version-pair rules.
+The generated `config/ZONEMODS/zoneguardian/regiones/creadas.toml` is a **read-only export** of current regions, not an editable configuration input. Use commands or the panel to change rules. The authoritative region data lives in the world save; back it up before upgrading. See [configuration and commands](CONFIGURATION.md) and [release compatibility](RELEASES.md).
 
 ## Español
 
-Regiones de jugadores y reglas de acceso aplicadas por el servidor. Minecraft 1.20.1 / Forge 47.x.
+Protege regiones de jugadores en un servidor dedicado Minecraft 1.20.1 / Forge 47.4.x. Pareja actual: **servidor 3.4.1 + cliente 3.4.1**, protocolo 7. Son dos archivos en un único proyecto CurseForge. Instala el JAR servidor solo en el servidor y el cliente solo en los clientes; ZoneCore 2.1.0+ se requiere en servidor. El cliente no requiere ZoneCore. Lightman's Currency 1.20.1-2.3.0.5+ es opcional para flags de máquinas, comercio y subastas.
 
-### Instalación
+Marca `/zoneguardian pos1`, `pos2` y usa `crear <nombre>` para proteger una selección. `/zoneguardian editar [nombre]` abre el panel custom; `/zoneguardian flag <nombre> <flag> <valor>` modifica por comando. El panel organiza 108 flags en 13 tareas. El servidor valida cambios y permisos. Nodos: `zoneguardian.region.create`, `zoneguardian.region.manage`, `zoneguardian.admin`, `zoneguardian.command.<comando>` y `zoneguardian.flag.<flag>`. El dueño administra su región y los permisos delegados limitan las ediciones.
 
-Instala el JAR marcado servidor en el servidor y su JAR cliente compatible en los clientes. Ambos archivos pertenecen al mismo proyecto CurseForge. Los números de versión pueden diferir; respeta la pareja indicada y no mezcles entregas. Dependencias obligatorias indicadas por los metadatos actuales: **ZoneCore**. Comprueba el rango de versión del archivo exacto que instales.
+`config/ZONEMODS/zoneguardian/regiones/creadas.toml` es una **exportación de lectura**, no un TOML de entrada. Cambia reglas desde comandos o panel. Los datos autoritativos están en el mundo; respáldalo antes de actualizar. Consulta [configuración y comandos](CONFIGURATION.md) y [compatibilidad](RELEASES.md).
 
-### Configuración
+© Elgochogms. This public repository contains documentation and its ZG avatar, no source code or private server data.
 
-Edita los TOML generados con el servidor o juego detenido, salvo que exista un comando de recarga documentado. Respalda los datos persistentes antes de actualizar.
-
-| Archivo de configuración | Uso |
-|---|---|
-| `regiones/creadas.toml` | Comprueba la ruta y opciones generadas de la entrega elegida. |
-
-Consulta la [referencia de configuración](CONFIGURATION.md) para claves detectadas en el código y la [compatibilidad de entregas](RELEASES.md) para las parejas de versiones.
-
-## Ownership / Titularidad
-
-Documentation and original ZONE visual assets © Elgochogms. This repository contains documentation and a project avatar only; it does not distribute mod source code, private mappings, server secrets or production configuration.
