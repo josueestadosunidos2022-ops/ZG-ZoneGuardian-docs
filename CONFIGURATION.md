@@ -1,4 +1,4 @@
-# ZG ZoneGuardian 3.4.1 — configuration / configuración
+# ZoneGuardian 3.4.1 — configuration / configuración
 
 ## English
 
