@@ -1,4 +1,4 @@
-# ZG ZoneGuardian
+# ZoneGuardian
 
 ## Update / Actualización — 2026-10-17
 
@@ -22,5 +22,5 @@ Marca `/zoneguardian pos1`, `pos2` y usa `crear <nombre>` para proteger una sele
 
 `config/ZONEMODS/zoneguardian/regiones/creadas.toml` es una **exportación de lectura**, no un TOML de entrada. Cambia reglas desde comandos o panel. Los datos autoritativos están en el mundo; respáldalo antes de actualizar. Consulta [configuración y comandos](CONFIGURATION.md) y [compatibilidad](RELEASES.md).
 
-© Elgochogms. This public repository contains documentation and its ZG avatar, no source code or private server data.
+© Elgochogms. This public repository contains documentation and its avatar, no source code or private server data.
 
