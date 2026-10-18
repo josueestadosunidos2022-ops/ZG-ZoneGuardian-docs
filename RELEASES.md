@@ -1,4 +1,4 @@
-# ZG ZoneGuardian — releases and compatibility
+# ZoneGuardian — releases and compatibility
 
 Current protected pair: **server 3.4.1 + client 3.4.1**, protocol 7. Use both files from the same CurseForge project on Minecraft 1.20.1, Forge 47.4.x and Java 17. The server requires ZoneCore 2.1.0+; the client does not. Lightman's Currency 1.20.1-2.3.0.5+ is optional on the server. Do not install `-dev`, fixture, source or unprotected build JARs. Stop the server and back up the persistent world before replacing the pair.
 
