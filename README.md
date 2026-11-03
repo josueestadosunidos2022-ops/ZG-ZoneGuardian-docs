@@ -1,5 +1,20 @@
 # ZoneGuardian
 
+## Current builds / Versiones actuales — 2026-11-03
+
+| Side / Lado | Version / Versión | CurseForge |
+|---|---|---|
+| ZoneGuardian server | 3.5.1 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zoneguardian/files/9426517) |
+| ZoneGuardian client | 3.5.1 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zoneguardian/files/9426525) |
+
+[Changes, installation and compatibility / Cambios, instalación y compatibilidad](RELEASE-2026-11-03.md).
+
+Public protected Beta builds. A submitted file becomes downloadable only after CurseForge approval. / Betas públicas protegidas: cada archivo queda descargable cuando CurseForge lo aprueba.
+
+## Earlier documentation / Documentación anterior
+
+The version and side table above takes precedence over historical versions below. / La tabla anterior prevalece sobre versiones históricas de la documentación siguiente.
+
 ## Update / Actualización — 2026-10-17
 
 Selected version / Versión seleccionada: **server 3.5.0 / client 3.5.0**. New file availability depends on CurseForge approval / La disponibilidad de los archivos nuevos depende de su aprobación en CurseForge.
