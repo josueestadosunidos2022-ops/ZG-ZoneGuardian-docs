@@ -1,3 +1,5 @@
+> **Current reference / Referencia actual — 2026-11-04:** [Updated release and detailed usage / Entrega y uso actualizado](RELEASE-2026-11-04.md). The current version/side table in README takes precedence over historical version examples below. / La pareja actual del README prevalece sobre ejemplos históricos de versiones.
+
 # ZoneGuardian 3.4.1 — configuration / configuración
 
 ## English
@@ -18,5 +20,5 @@ Crear: `/zoneguardian pos1`, `/zoneguardian pos2`, `/zoneguardian crear <nombre>
 
 El panel agrupa 108 flags en 13 tareas: territorio, bloques/máquinas, entidades, objetos, aparición, explosiones, ambiente/fluidos, crecimiento, movimiento, chat, salud, mensajes y Lightman's Currency. Ejemplos de ID: `block-break`, `block-place`, `chest-access`, `protect-entities`, `pvp`, `entry`, `allowed-cmds`, `water-flow`, `lc-machines`, `lc-trade`, `lc-auction`. Las últimas tres requieren el mod opcional. `allowed-cmds` es lista blanca; los valores antiguos se migran a excepciones internas. Menús propios y capacidades Forge usan `chest-access`, salvo regla `lc-machines` explícita. Los datapacks pueden ampliar `zoneguardian:machine_interactable`.
 
-Permisos: `zoneguardian.region.create`, `zoneguardian.region.manage`, `zoneguardian.admin`, `zoneguardian.command.<comando>` y `zoneguardian.flag.<flag>`. El servidor valida dueño, administrador y delegaciones. `game-mode` tiene control administrativo más estricto. Usa el panel para ver valores válidos y los nombres actuales.
-
+Permisos: `zoneguardian.region.create`, `zoneguardian.region.manage`, `zoneguardian.admin`, `zoneguardian.command.<comando>` y `zoneguardian.flag.<flag>`. El servidor valida dueño, administrador y delegaciones. `game-mode` tiene control administrativo más estricto. Usa el panel para ver valores válidos y los nombres actuales.
+
