@@ -1,41 +1,40 @@
 # ZoneGuardian
 
-## Current builds / Versiones actuales — 2026-11-03
+## Current builds / Versiones actuales — 2026-11-04
 
-| Side / Lado | Version / Versión | CurseForge |
+| Side / Lado | Version / Versión | File / Archivo |
 |---|---|---|
-| ZoneGuardian server | 3.5.1 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zoneguardian/files/9426517) |
-| ZoneGuardian client | 3.5.1 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zoneguardian/files/9426525) |
+| server | 3.6.0 | [zoneguardian-server-3.6.0-protected.jar](https://www.curseforge.com/projects/1738034/files/9438525) |
+| client | 3.6.0 | [zoneguardian-client-3.6.0-protected.jar](https://www.curseforge.com/projects/1738034/files/9438544) |
 
-[Changes, installation and compatibility / Cambios, instalación y compatibilidad](RELEASE-2026-11-03.md).
+Minecraft 1.20.1 / Forge 47.4.x / Java 17. Protected public Beta builds; availability depends on each file approval. / Betas públicas protegidas; disponibilidad según aprobación de cada archivo.
 
-Public protected Beta builds. A submitted file becomes downloadable only after CurseForge approval. / Betas públicas protegidas: cada archivo queda descargable cuando CurseForge lo aprueba.
+## English — What is new
 
-## Earlier documentation / Documentación anterior
+New original pixel interface, recolored shield, six-row pages, global flag/command search and explicit Enable/Disable/Reset actions. Enable restores the previous configured value; Reset removes the override and applies inheritance. Deleted regions now report a visible error during edits. Retains 108 flags, 13 groups, protocol 7 and persistent data. Update the 3.6.0 pair together; Core only on server.
 
-The version and side table above takes precedence over historical versions below. / La tabla anterior prevalece sobre versiones históricas de la documentación siguiente.
+## Español — Novedades
 
-## Update / Actualización — 2026-10-17
+Interfaz de píxeles propia, escudo recoloreado, seis filas paginadas, búsqueda global de flags/comandos y acciones Activar/Desactivar/Restablecer. Activar recupera el valor previo; Restablecer elimina la configuración explícita y aplica herencia. Regiones eliminadas durante edición devuelven error visible. Conserva 108 flags, 13 grupos, protocolo 7 y datos; actualizar pareja 3.6.0. Core solo servidor.
 
-Selected version / Versión seleccionada: **server 3.5.0 / client 3.5.0**. New file availability depends on CurseForge approval / La disponibilidad de los archivos nuevos depende de su aprobación en CurseForge.
+## Installation / Instalación
 
-See [changes, exact files and installation](UPDATES-2026-10-17.md) / Consulta [cambios, archivos e instalación](UPDATES-2026-10-17.md). Preserve the world and TOML files / Conserva mundo y TOML.
+Use the exact server/client pair in the table. Do not mix earlier network revisions. / Usa la pareja exacta de la tabla; no mezcles revisiones de red anteriores.
 
-## English
+Stop the affected instance, back up the world/config, remove only the previous same-mod/same-side JAR, and install the table version. Preserve character data, wallets and TOML. Do not put server-only dependencies on clients. / Detén la instancia, respalda mundo/config, sustituye solo el JAR anterior del mismo mod y lado, y conserva personajes, cartera y TOML. No instales dependencias exclusivas de servidor en el cliente.
 
-Protect player regions on a dedicated Minecraft 1.20.1 / Forge 47.4.x server. Current pair: **server 3.5.0 + client 3.5.0**, protocol 7. Uploads are two separate files on one CurseForge project. Install the server file only on the server, the client file only on clients, and ZoneCore 2.1.0+ on the server. The client does not require ZoneCore. Lightman's Currency 1.20.1-2.3.0.5+ is optional for its machine, trade and auction flags.
+## Dependencies / Dependencias
 
-Use `/zoneguardian pos1`, `pos2`, then `crear <name>` to protect a selection. `/zoneguardian editar [name]` opens the custom flag panel; `/zoneguardian flag <name> <flag> <value>` edits by command. The panel organizes 108 flags into 13 tasks, including building, machines, entities, weather, movement, commands and economy. The server validates edits and permissions. `zoneguardian.region.create`, `zoneguardian.region.manage`, `zoneguardian.admin`, `zoneguardian.command.<command>` and `zoneguardian.flag.<flag>` are permission nodes. Owners can manage their own regions; delegated flag permissions limit what can be edited.
+**server**: `zonecore` [2.1.0,) (required/obligatorio; SERVER); `lightmanscurrency` [1.20.1-2.3.0.5,) (optional/opcional; SERVER).
 
-The generated `config/ZONEMODS/zoneguardian/regiones/creadas.toml` is a **read-only export** of current regions, not an editable configuration input. Use commands or the panel to change rules. The authoritative region data lives in the world save; back it up before upgrading. See [configuration and commands](CONFIGURATION.md) and [release compatibility](RELEASES.md).
+**client**: No additional Zone requirement / Sin requisito Zone adicional.
 
-## Español
+[Full changes and usage / Novedades y uso](RELEASE-2026-11-04.md) · [Configuration / Configuración](CONFIGURATION.md) · [Historical releases / Entregas históricas](RELEASES.md).
 
-Protege regiones de jugadores en un servidor dedicado Minecraft 1.20.1 / Forge 47.4.x. Pareja actual: **servidor 3.5.0 + cliente 3.5.0**, protocolo 7. Son dos archivos en un único proyecto CurseForge. Instala el JAR servidor solo en el servidor y el cliente solo en los clientes; ZoneCore 2.1.0+ se requiere en servidor. El cliente no requiere ZoneCore. Lightman's Currency 1.20.1-2.3.0.5+ es opcional para flags de máquinas, comercio y subastas.
+## Validation / Verificación
 
-Marca `/zoneguardian pos1`, `pos2` y usa `crear <nombre>` para proteger una selección. `/zoneguardian editar [nombre]` abre el panel custom; `/zoneguardian flag <nombre> <flag> <valor>` modifica por comando. El panel organiza 108 flags en 13 tareas. El servidor valida cambios y permisos. Nodos: `zoneguardian.region.create`, `zoneguardian.region.manage`, `zoneguardian.admin`, `zoneguardian.command.<comando>` y `zoneguardian.flag.<flag>`. El dueño administra su región y los permisos delegados limitan las ediciones.
+Original release checks and isolated startup/command registration of the protected set were reviewed. Shared schemas: Essentials 35, Guardian 13 and Misions 4 classes, with no mapping differences. This does not certify a new graphical client session, two-player gameplay, full third-party modpack, hosting deployment or FPS/TPS. / Revisadas las verificaciones de entrega y el arranque/registro de comandos del conjunto protegido. Esquemas compartidos sin diferencias de mapeo: Essentials 35, Guardian 13 y Misions 4 clases. No certifica una nueva sesión gráfica, dos jugadores, modpack completo, hosting ni FPS/TPS.
 
-`config/ZONEMODS/zoneguardian/regiones/creadas.toml` es una **exportación de lectura**, no un TOML de entrada. Cambia reglas desde comandos o panel. Los datos autoritativos están en el mundo; respáldalo antes de actualizar. Consulta [configuración y comandos](CONFIGURATION.md) y [compatibilidad](RELEASES.md).
+## Ownership / Titularidad
 
-© Elgochogms. This public repository contains documentation and its avatar, no source code or private server data.
-
+Original ZONE code and visual assets © Elgochogms. Public documentation only: no mod sources, private obfuscation maps, credentials or production player data. Existing rights of earlier distributions are preserved.
